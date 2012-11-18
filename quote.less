@@ -1,0 +1,46 @@
+/* According to Wikipedia: http://en.wikipedia.org/wiki/Non-English_usage_of_quotation_marks */
+
+:lang(en),    /* English */
+:lang(cy)     /* Welsh */
+{	q { quotes: '\2018' '\2019' '\201C' '\201D' '\2018' '\2019' '\201C' '\201D';
+		  /*         ‘       ’       “       ”       ‘       ’       “       ”  */
+}	}
+
+
+:lang(af),    /* Afrikaans */
+:lang(zh),    /* Chinese simplified */
+:lang(en-us), /* English (US) */
+:lang(eo),    /* Esperanto */
+:lang(id),    /* Indonesian */
+:lang(ga),    /* Irish */
+:lang(ko),    /* Korean */
+:lang(pt-br), /* Portuguese (Brazil) */
+:lang(th),    /* Thai */
+:lang(tr)     /* Turkish */
+{	q { quotes: '\201C' '\201D' '\2018' '\2019' '\201C' '\201D' '\2018' '\2019';
+	    /*         “       ”       ‘       ’       “       ”       ‘       ’  */
+}	}
+
+
+:lang(sq),    /* Albanian */
+:lang(bs)     /* Bulgarian */
+{	q { quotes: '\201E' '\201C' '\2018' '\2019' '\201E' '\201C' '\2018' '\2019';
+	    /*         „       “       ‘       ’       „       “       ‘       ’  */
+}	}
+
+
+:lang(ar)    /* Arabic */
+{	q { quotes: '\201D' '\201C'; 
+	    /*         ”       “  */
+}	}
+
+
+:lang(cs),    /* Czech */
+:lang(de),    /* German */
+:lang(sk),    /* Slovak */
+:lang(sl),    /* Slovenian */
+:lang(sb),    /* Sorbian */
+:lang(is)     /* Icelandic */
+{	q { quotes: '\201E' '\201C' '\201A' '\2018' '\201E' '\201C' '\201A' '\2018';
+	    /*         „       “       ‚       ‘       „       “       ‚       ‘  */
+}	}

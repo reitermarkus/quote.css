@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>The CSS "quote in a quote" problem.</title>
+<link rel="stylesheet/less" type="text/less" href="quote.less" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.1/less.min.js"></script>
+<style>
+	@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic,700,600italic,600,400italic);
+	
+	body {
+		font-family: 'Crimson Text', Times, serif;
+		font-size: 16px;
+		margin: 0 auto;
+		max-width: 640px;
+		padding: 40px;
+		line-height: 20px;
+		line-height: 1.25rem;
+	}
+		
+	p, h1 {
+		margin: 16px 0;
+		margin: 1rem 0;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size: 32px;
+		font-size: 2rem;
+		margin-top: 48px;
+		margin-top: 3rem;
+		line-height: 32px;
+		line-height: 2rem;
+	}
+</style>
+</head>
+<body>
+
+  <h1>English, Welsh</h1>
+  <p lang="en">
+    <q>Double 
+      <q>single 
+        <q>double 
+          <q>single</q>
+          double</q>
+        single</q>
+      double.</q>
+  </p>
+
+  <h1>Afrikaans, Chinese simplified, English (US), Esperanto, Indonesian, Irish, Korean, Portuguese (Brazil), Thai, Turkish</h1>
+  <p lang="en-US">
+    <q>Double 
+      <q>single 
+        <q>double 
+          <q>single</q>
+          double</q>
+        single</q>
+      double.</q>
+  </p>
+
+  <h1>Albanian, Bulgarian</h1>
+  <p lang="sq">
+    <q>Double 
+      <q>single 
+        <q>double 
+          <q>single</q>
+          double</q>
+        single</q>
+      double.</q>
+  </p>
+
+  <h1>Arabic</h1>
+  <p dir="rtl" lang="ar">
+    <q>مضاعفة 
+      <q> وحيد 
+        <q> مضاعفة 
+          <q> وحيد </q>
+          مضاعفة </q>
+        وحيد </q>
+      مضاعفة</q>
+  </p>
+
+  <h1>Czech, German, Icelandic, Slovak, Slovenian, Sorbian</h1>
+  <p lang="de">
+    <q>Double 
+      <q>single 
+        <q>double 
+          <q>single</q>
+          double</q>
+        single</q>
+      double.</q>
+  </p>
+  
+</body>
+</html>
